@@ -3,12 +3,14 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CartComponent } from './cart/cart.component';
+import { ShippingComponent } from './shipping/shipping.component';
 
 const routes: Routes = [
   { path: 'products', component: ProductListComponent },
   { path: 'products/:productId', component: ProductDetailsComponent },
   { path: '', component: ProductDetailsComponent },
   { path: 'cart', component: CartComponent },
+  { path: 'shipping', component: ShippingComponent },
 ];
 
 @NgModule({
