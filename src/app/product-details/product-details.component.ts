@@ -25,7 +25,7 @@ export class ProductDetailsComponent implements OnInit {
     private cartService: CartService
   ) {}
 
-  //Define addToCart() method in cart.service.ts which adds the current prodct to the cart
+  //Define addToCart() method in cart.service.ts which adds the current product to the cart
   addToCart(product: Product) {
     this.cartService.addToCart(product);
     window.alert([product.name] + ' has been added to the cart!');
